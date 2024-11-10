@@ -1,0 +1,392 @@
+* {
+    font-family: sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 90px;
+    background-color: #1c1c1c;
+}
+
+.fadeout {
+    opacity: 1;
+    animation: fadeout 2s;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 90px;
+    background-color: #1c1c1c;
+    box-shadow: 0px 1px 10px black;
+}
+
+.logo_label {
+    position: absolute;
+    top: -15px;
+    left: 75px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.logo {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50px;
+}
+
+.youtube_link {
+    text-decoration: none;
+    color: aqua;
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.youtube_logo {
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    width: 50px;
+}
+
+.youtube_link:hover {
+    transform: scale(1.1);
+}
+
+.facebook_link {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 13px;
+    right: 180px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.facebook_logo {
+    position: absolute;
+    top: 13px;
+    right: 100px;
+    width: 32px;
+}
+
+.facebook_link:hover {
+    transform: scale(1.1);
+}
+
+.instagram_link {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 13px;
+    right: 340px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.instagram_logo {
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    width: 45px;
+}
+
+.instagram_link:hover {
+    transform: scale(1.1);
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-image: url(coding_background.jpg);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+}
+
+.unleash {
+    width: 100%;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.welcome {
+    margin-top: 100px;
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.sec1 {
+    background-color: #1c1c1c;
+    padding: 50px 0;
+}
+
+.witp, .wyslp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.programing_paragraph, .why_programing_paragraph {
+    margin: 15px;
+    font-size: 16px;
+}
+
+.computer, .desk {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+span{
+    font-weight: bold;
+}
+
+
+@media (min-width: 1270px) {
+    .computer {
+        height: 400px !important;
+        width: 400px !important;
+    }
+    .witp {
+        height: 400px !important;
+    }
+    .programing_paragraph{
+        margin-right: 300px !important;
+        font-size: 20px !important;
+    }
+    .desk{
+        height: 400px !important;
+        width: 400px !important;
+    }
+    .wyslp{
+        height: 400px !important;
+    }
+    .why_programing_paragraph{
+        margin-left: 250px !important;
+        font-size: 20px !important;
+    }
+
+}
+
+
+@media (min-width: 1000px){
+    .welcome{
+        font-size: 50px;
+    }
+    .unleash{
+        font-size: 30px;
+    }
+    .computer{
+        height: 350px;
+        width: 350px;
+    }
+    .witp{
+        height: 350px;
+    }
+    .programing_paragraph{
+        font-size: 20px !important;
+        margin-right: 60px;
+    }
+    .desk{
+        height: 350px;
+        width: 350px;
+    }
+    .wyslp{
+        height: 350px;
+    }
+    .why_programing_paragraph{
+        font-size: 19px !important;
+        margin-right: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .welcome {
+        font-size: 35px;
+    }
+
+    .unleash {
+        font-size: 25px;
+    }
+
+    .header {
+        height: 70px;
+    }
+
+    .logo {
+        width: 40px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .logo_label {
+        top: -10px;
+        left: 60px;
+        font-size: 30px;
+    }
+
+    .facebook_link {
+        right: 150px;
+    }
+
+    .instagram_link {
+        right: 295px;
+    }
+
+    .facebook_link, .youtube_link, .instagram_link {
+        top: 10px;
+        font-size: 18px;
+    }
+
+    .youtube_logo {
+        top: 6px;
+        right: 70px;
+        width: 40px;
+    }
+
+    .facebook_logo {
+        top: 10px;
+        right: 95px;
+        width: 30px;
+    }
+
+
+
+    .instagram_logo {
+        top: 6px;
+        right: 95px;
+        width: 40px;
+    }
+
+    .witp, .wyslp {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 10px;
+        background-color: white;
+    }
+
+    .programing_paragraph, .why_programing_paragraph {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .computer, .desk {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .welcome {
+        font-size: 25px;
+    }
+
+    .unleash {
+        font-size: 20px;
+    }
+
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        width: 35px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+
+    .logo_label {
+        top: -5px;
+        left: 50px;
+        font-size: 25px;
+    }
+
+    .youtube_logo {
+        right: 5px;
+        top: -10px;
+        width: 60px;
+    }
+
+    .facebook_logo {
+        right: 0px;
+        top: 0px;
+        width: 40px;
+    }
+
+    .instagram_logo {
+        right: -50px;
+        top: -5px;
+        width: 50px;
+    }
+
+    /* Hide text labels on smaller screens if needed */
+    .youtube_label,
+    .facebook_label,
+    .instagram_label {
+        display: none;
+    }
+
+    .witp, .wyslp {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .programing_paragraph, .why_programing_paragraph {
+        margin: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .computer, .desk {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+}
